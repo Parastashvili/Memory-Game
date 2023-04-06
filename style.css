@@ -135,6 +135,11 @@ body {
     align-items: center;
 }
 
+#tab_buttons {
+    display: none;
+
+}
+
 .game_name2 {
     font-weight: 700;
     font-size: 24px;
@@ -156,6 +161,41 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    border-width: 0px;
+}
+
+.tab_mobile {
+    display: flex;
+    background: var(--orange);
+    border-radius: 26px;
+    width: 127px;
+    height: 52px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: var(--numbers);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-width: 0px;
+}
+
+.tab_mobile1 {
+    display: flex;
+    background: #DFE7EC;
+    border-radius: 26px;
+    width: 149px;
+    height: 52px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: var(--hidden);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-width: 0px;
 }
 
 .menu_mobile:hover {
@@ -187,7 +227,7 @@ body {
     background-color: var(--orange);
     animation: slide-in 1s ease-out forwards;
     z-index: 0;
-    border-radius: 5px
+    border-radius: 5px;
 }
 
 @keyframes slide-in {
@@ -521,5 +561,133 @@ body {
 
 #windiv4 {
     display: none;
+
+}
+
+@media (min-width:768px) {
+    .game_name {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    #game_start {
+        width: 542px;
+        height: 447px;
+        border-radius: 20px;
+        padding: 56px;
+    }
+
+    .choose_option {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .freeCell {
+        width: 256px;
+        height: 52px;
+        margin: 16px 0px 32px 0px;
+    }
+
+    .numfreeCell {
+        width: 119px;
+        height: 52px;
+        margin: 16px 0px 33px;
+    }
+
+    .select_text {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .yellowbtn {
+        width: 541px;
+        height: 70px;
+        border-radius: 35px;
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .circles {
+        width: 118px;
+        height: 118px;
+        margin-bottom: 20px;
+    }
+
+    #game_area {
+        width: 768px;
+        padding: 37px;
+    }
+
+    #board {
+        width: 532px;
+        height: 532px;
+        margin: 157px auto 116px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #game_zone {
+        width: 689px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .game_name2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    #oneplayer {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .oneplayer {
+        flex-direction: row;
+        gap: 105px;
+        width: 255px;
+        height: 72px;
+        border-radius: 10px;
+    }
+
+    .oneplayertxt {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .timescoreforone {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .circlesFour {
+        font-size: 56px;
+        line-height: 69px;
+    }
+
+    .circlesSix {
+        font-size: 44px;
+        line-height: 55px;
+    }
+
+    .menu_mobile {
+        display: none;
+    }
+
+    #tab_buttons {
+        display: flex;
+
+    }
+
+    #mobile_top {
+        justify-content: space-between;
+    }
+
+    #tab_buttons {
+        display: flex;
+        gap: 16px;
+    }
 
 }

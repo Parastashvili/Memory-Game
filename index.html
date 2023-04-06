@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -12,6 +13,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <title>Memory game</title>
 </head>
+
 <body id="">
   <section id="start_screen">
     <div>
@@ -42,7 +44,11 @@
     <div id="game_zone">
       <div id="mobile_top">
         <h2 class="game_name2" onclick="multiplayerResult()">memory</h2>
-        <h3 class="menu_mobile" id="menu" onclick="menu()">Menu</h3>
+        <button class="menu_mobile" id="menu" onclick="menu()">Menu</button>
+        <div id="tab_buttons">
+          <button class="tab_mobile" id="menu" onclick="restartBTN()">Restart</button>
+          <button class="tab_mobile1" id="menu" onclick="restart()">New Game</button>
+        </div>
       </div>
       <div id="board">
         <div id="circle_box">
@@ -168,4 +174,5 @@
   </section>
   <script src="./memory.js"></script>
 </body>
+
 </html>
