@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Memory game</title>
+</head>
+<body id="">
+  <section id="start_screen">
+    <div>
+      <h1 class="game_name">memory</h1>
+    </div>
+    <div id="game_start">
+      <h6 class="choose_option">Select Theme</h6>
+      <div class="choose_buttons">
+        <button class="freeCell select_text markedCell" onclick="theme('numbers')">Numbers</button>
+        <button class="freeCell select_text" onclick="theme('icons')">Icons</button>
+      </div>
+      <h6 class="choose_option">Number of Players</h6>
+      <div class="choose_buttons">
+        <button class="numfreeCell select_text markedCell" onclick="playersNum('1')">1</button>
+        <button class="numfreeCell select_text" onclick="playersNum('2')">2</button>
+        <button class="numfreeCell select_text" onclick="playersNum('3')">3</button>
+        <button class="numfreeCell select_text" onclick="playersNum('4')">4</button>
+      </div>
+      <h6 class="choose_option">Grid Size</h6>
+      <div class="choose_buttons">
+        <button class="freeCell select_text markedCell" onclick="grid('4')">4x4</button>
+        <button class="freeCell select_text" onclick="grid('6')">6x6</button>
+      </div>
+      <button id="startbtn" class="yellowbtn">Start Game</button>
+    </div>
+  </section>
+  <section id="game_area">
+    <div id="game_zone">
+      <div id="mobile_top">
+        <h2 class="game_name2" onclick="multiplayerResult()">memory</h2>
+        <h3 class="menu_mobile" id="menu" onclick="menu()">Menu</h3>
+      </div>
+      <div id="board">
+        <div id="circle_box">
+          <div class="circles hide"></div>
+          <div class="circles hide"></div>
+          <div class="circles hide"></div>
+          <div class="circles hide"></div>
+          <div class="circles hide"></div>
+          <div class="circles hide"></div>
+          <div class="circles hide"></div>
+          <div class="circles hide"></div>
+          <div class="circles hide"></div>
+          <div class="circles hide"></div>
+          <div class="circles hide"></div>
+          <div class="circles hide"></div>
+          <div class="circles hide"></div>
+          <div class="circles hide"></div>
+          <div class="circles hide"></div>
+          <div class="circles hide"></div>
+          <div class="circles hide"></div>
+          <div class="circles hide"></div>
+          <div class="circles hide"></div>
+          <div class="circles hide"></div>
+          <div class="circles"></div>
+          <div class="circles"></div>
+          <div class="circles"></div>
+          <div class="circles"></div>
+          <div class="circles"></div>
+          <div class="circles"></div>
+          <div class="circles"></div>
+          <div class="circles"></div>
+          <div class="circles"></div>
+          <div class="circles"></div>
+          <div class="circles"></div>
+          <div class="circles"></div>
+          <div class="circles"></div>
+          <div class="circles"></div>
+          <div class="circles"></div>
+          <div class="circles"></div>
+        </div>
+      </div>
+      <div class="players_boxes" id="main_box">
+        <div class="mobile_players mobile_active">
+          <p class="players_name player_name_active">P1</p>
+          <p class="points points_active">0</p>
+        </div>
+        <div class="mobile_players">
+          <p class="players_name">P2</p>
+          <p class="points">0</p>
+        </div>
+        <div class="mobile_players">
+          <p class="players_name">P3</p>
+          <p class="points">0</p>
+        </div>
+        <div class="mobile_players">
+          <p class="players_name">P4</p>
+          <p class="points">0</p>
+        </div>
+      </div>
+      <div id="oneplayer">
+        <div class="oneplayer">
+          <p class="oneplayertxt" id="timeforone">Time</p>
+          <p class="timescoreforone" id="timecounter">00:00</p>
+        </div>
+        <div class="oneplayer">
+          <p class="oneplayertxt" id="movesforone">Moves</p>
+          <p class="timescoreforone" id="timescoreforone">0</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="restart_screen">
+    <div class="restart_buttonyellow" onclick="restartBTN()">Restart</div>
+    <div class="restart_button" onclick="restart()">New Game</div>
+    <div class="restart_button" onclick="resume()">Resume Game</div>
+  </section>
+  <section id="one_result_screen">
+    <div>
+      <p class="wone">You did it!</p>
+      <p class="wtwo">Game over! Here’s how you got on…</p>
+      <div id="forMargin">
+        <div class="windiv">
+          <p class="wthree">Time Elapsed</p>
+          <p class="wfour" id="timeresult">00:00</p>
+        </div>
+        <div class="windiv">
+          <p class="wthree">Moves Taken</p>
+          <p class="wfour" id="movescount">0 Moves</p>
+        </div>
+      </div>
+      <button class="yellowbtn margin">Restart</button>
+      <button class="restart_button margin1" onclick="restart()">Setup New Game</button>
+    </div>
+  </section>
+  <section id="multiplayer_result">
+    <div>
+      <p class="wone" id="wone">Player 3 Wins!</p>
+      <p class="wtwo">Game over! Here are the results…</p>
+      <div id="forMargin">
+        <div class="windiv" id="windiv1">
+          <p class="wthree">Player 1</p>
+          <p class="wfour">0 Pairs</p>
+        </div>
+        <div class="windiv" id="windiv2">
+          <p class="wthree">Player 2</p>
+          <p class="wfour">0 Pairs</p>
+        </div>
+        <div class="windiv" id="windiv3">
+          <p class="wthree">Player 3</p>
+          <p class="wfour">0 Pairs</p>
+        </div>
+        <div class="windiv" id="windiv4">
+          <p class="wthree">Player 4</p>
+          <p class="wfour">0 Pairs</p>
+        </div>
+      </div>
+      <button class="yellowbtn margin" onclick="restartBTN()">Restart</button>
+      <button class="restart_button margin1" onclick="restart()">Setup New Game</button>
+    </div>
+  </section>
+  <section>
+    <div id="blocker"></div>
+  </section>
+  <script src="./memory.js"></script>
+</body>
+</html>
