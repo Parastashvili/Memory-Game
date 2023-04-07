@@ -300,19 +300,23 @@ function checkCells() {
                         if (playerTurn % 2 != 0) {
                             setTimeout(function changeTurn() {
                                 playerSeqBG[1].classList.add('mobile_active');
-                                playerSeqNames[1].classList.add('player_name_active');
+                                playerSeqNames[2].classList.add('player_name_active');
+                                playerSeqNames[3].classList.add('player_name_active');
                                 playerSeqScores[1].classList.add('points_active');
                                 playerSeqBG[0].classList.remove('mobile_active');
                                 playerSeqNames[0].classList.remove('player_name_active');
+                                playerSeqNames[1].classList.remove('player_name_active');
                                 playerSeqScores[0].classList.remove('points_active');
                             }, 1000);
                         } else {
                             setTimeout(function changeTurn() {
                                 playerSeqBG[1].classList.remove('mobile_active');
-                                playerSeqNames[1].classList.remove('player_name_active');
+                                playerSeqNames[2].classList.remove('player_name_active');
+                                playerSeqNames[3].classList.remove('player_name_active');
                                 playerSeqScores[1].classList.remove('points_active');
                                 playerSeqBG[0].classList.add('mobile_active');
                                 playerSeqNames[0].classList.add('player_name_active');
+                                playerSeqNames[1].classList.add('player_name_active');
                                 playerSeqScores[0].classList.add('points_active');
                             }, 1000);
                         }
@@ -321,34 +325,42 @@ function checkCells() {
                         if (playerTurn === 1) {
                             setTimeout(function changeTurn() {
                                 playerSeqBG[1].classList.add('mobile_active');
-                                playerSeqNames[1].classList.add('player_name_active');
+                                playerSeqNames[2].classList.add('player_name_active');
+                                playerSeqNames[3].classList.add('player_name_active');
                                 playerSeqScores[1].classList.add('points_active');
                                 playerSeqBG[0].classList.remove('mobile_active');
                                 playerSeqNames[0].classList.remove('player_name_active');
+                                playerSeqNames[1].classList.remove('player_name_active');
                                 playerSeqScores[0].classList.remove('points_active');
                             }, 1000);
                         } else if (playerTurn === 2) {
                             setTimeout(function changeTurn() {
                                 playerSeqBG[1].classList.remove('mobile_active');
-                                playerSeqNames[1].classList.remove('player_name_active');
+                                playerSeqNames[2].classList.remove('player_name_active');
+                                playerSeqNames[3].classList.remove('player_name_active');
                                 playerSeqScores[1].classList.remove('points_active');
                                 playerSeqBG[0].classList.remove('mobile_active');
                                 playerSeqNames[0].classList.remove('player_name_active');
+                                playerSeqNames[1].classList.remove('player_name_active');
                                 playerSeqScores[0].classList.remove('points_active');
                                 playerSeqBG[2].classList.add('mobile_active');
-                                playerSeqNames[2].classList.add('player_name_active');
+                                playerSeqNames[4].classList.add('player_name_active');
+                                playerSeqNames[5].classList.add('player_name_active');
                                 playerSeqScores[2].classList.add('points_active');
                             }, 1000);
                         } else if (playerTurn === 3) {
                             setTimeout(function changeTurn() {
                                 playerSeqBG[1].classList.remove('mobile_active');
-                                playerSeqNames[1].classList.remove('player_name_active');
+                                playerSeqNames[2].classList.remove('player_name_active');
+                                playerSeqNames[3].classList.remove('player_name_active');
                                 playerSeqScores[1].classList.remove('points_active');
                                 playerSeqBG[0].classList.add('mobile_active');
                                 playerSeqNames[0].classList.add('player_name_active');
+                                playerSeqNames[1].classList.add('player_name_active');
                                 playerSeqScores[0].classList.add('points_active');
                                 playerSeqBG[2].classList.remove('mobile_active');
-                                playerSeqNames[2].classList.remove('player_name_active');
+                                playerSeqNames[4].classList.remove('player_name_active');
+                                playerSeqNames[5].classList.remove('player_name_active');
                                 playerSeqScores[2].classList.remove('points_active');
                             }, 1000);
                         }
@@ -360,53 +372,66 @@ function checkCells() {
                         if (playerTurn === 1) {
                             setTimeout(function changeTurn() {
                                 playerSeqBG[1].classList.add('mobile_active');
-                                playerSeqNames[1].classList.add('player_name_active');
+                                playerSeqNames[2].classList.add('player_name_active');
+                                playerSeqNames[3].classList.add('player_name_active');
                                 playerSeqScores[1].classList.add('points_active');
                                 playerSeqBG[0].classList.remove('mobile_active');
                                 playerSeqNames[0].classList.remove('player_name_active');
+                                playerSeqNames[1].classList.remove('player_name_active');
                                 playerSeqScores[0].classList.remove('points_active');
                             }, 1000);
                         } else if (playerTurn === 2) {
                             setTimeout(function changeTurn() {
                                 playerSeqBG[1].classList.remove('mobile_active');
-                                playerSeqNames[1].classList.remove('player_name_active');
+                                playerSeqNames[2].classList.remove('player_name_active');
+                                playerSeqNames[3].classList.remove('player_name_active');
                                 playerSeqScores[1].classList.remove('points_active');
                                 playerSeqBG[0].classList.remove('mobile_active');
                                 playerSeqNames[0].classList.remove('player_name_active');
+                                playerSeqNames[1].classList.remove('player_name_active');
                                 playerSeqScores[0].classList.remove('points_active');
                                 playerSeqBG[2].classList.add('mobile_active');
-                                playerSeqNames[2].classList.add('player_name_active');
+                                playerSeqNames[4].classList.add('player_name_active');
+                                playerSeqNames[5].classList.add('player_name_active');
                                 playerSeqScores[2].classList.add('points_active');
                             }, 1000);
                         } else if (playerTurn === 3) {
                             setTimeout(function changeTurn() {
                                 playerSeqBG[1].classList.remove('mobile_active');
-                                playerSeqNames[1].classList.remove('player_name_active');
+                                playerSeqNames[2].classList.remove('player_name_active');
+                                playerSeqNames[3].classList.remove('player_name_active');
                                 playerSeqScores[1].classList.remove('points_active');
                                 playerSeqBG[0].classList.remove('mobile_active');
                                 playerSeqNames[0].classList.remove('player_name_active');
+                                playerSeqNames[1].classList.remove('player_name_active');
                                 playerSeqScores[0].classList.remove('points_active');
                                 playerSeqBG[2].classList.remove('mobile_active');
-                                playerSeqNames[2].classList.remove('player_name_active');
+                                playerSeqNames[4].classList.remove('player_name_active');
+                                playerSeqNames[5].classList.remove('player_name_active');
                                 playerSeqScores[2].classList.remove('points_active');
                                 playerSeqBG[3].classList.add('mobile_active');
-                                playerSeqNames[3].classList.add('player_name_active');
+                                playerSeqNames[6].classList.add('player_name_active');
+                                playerSeqNames[7].classList.add('player_name_active');
                                 playerSeqScores[3].classList.add('points_active');
                             }, 1000);
                         }
                         else if (playerTurn === 4) {
                             setTimeout(function changeTurn() {
                                 playerSeqBG[1].classList.remove('mobile_active');
-                                playerSeqNames[1].classList.remove('player_name_active');
+                                playerSeqNames[2].classList.remove('player_name_active');
+                                playerSeqNames[3].classList.remove('player_name_active');
                                 playerSeqScores[1].classList.remove('points_active');
                                 playerSeqBG[0].classList.add('mobile_active');
                                 playerSeqNames[0].classList.add('player_name_active');
+                                playerSeqNames[1].classList.add('player_name_active');
                                 playerSeqScores[0].classList.add('points_active');
                                 playerSeqBG[2].classList.remove('mobile_active');
-                                playerSeqNames[2].classList.remove('player_name_active');
+                                playerSeqNames[4].classList.remove('player_name_active');
+                                playerSeqNames[5].classList.remove('player_name_active');
                                 playerSeqScores[2].classList.remove('points_active');
                                 playerSeqBG[3].classList.remove('mobile_active');
-                                playerSeqNames[3].classList.remove('player_name_active');
+                                playerSeqNames[6].classList.remove('player_name_active');
+                                playerSeqNames[7].classList.remove('player_name_active');
                                 playerSeqScores[3].classList.remove('points_active');
                             }, 1000);
                         }
@@ -474,27 +499,27 @@ function checkPlayers() {
     } else if (players === '2') {
         onePlayer.style.display = 'none';
         multiPlayer[0].classList.add('visible', 'fortwo');
-        multiPlayer[0].classList.remove('forthree');
+        multiPlayer[0].classList.remove('forthree', 'forfour');
         multiPlayer[1].classList.add('visible', 'fortwo');
-        multiPlayer[0].classList.remove('forthree');
+        multiPlayer[0].classList.remove('forthree', 'forfour');
     } else if (players === '3') {
         onePlayer.style.display = 'none';
-        multiPlayer[0].classList.add('visible', 'forthree');
+        multiPlayer[0].classList.add('visible', 'forthree', 'forfour');
         multiPlayer[0].classList.remove('fortwo');
-        multiPlayer[1].classList.add('visible', 'forthree');
+        multiPlayer[1].classList.add('visible', 'forthree', 'forfour');
         multiPlayer[0].classList.remove('fortwo');
-        multiPlayer[2].classList.add('visible', 'forthree');
+        multiPlayer[2].classList.add('visible', 'forthree', 'forfour');
         multiPlayer[0].classList.remove('fortwo');
     }
     else if (players === '4') {
         onePlayer.style.display = 'none';
-        multiPlayer[0].classList.add('visible');
+        multiPlayer[0].classList.add('visible', 'forfour');
         multiPlayer[0].classList.remove('fortwo', 'forthree');
-        multiPlayer[1].classList.add('visible');
+        multiPlayer[1].classList.add('visible', 'forfour');
         multiPlayer[1].classList.remove('fortwo', 'forthree');
-        multiPlayer[2].classList.add('visible');
+        multiPlayer[2].classList.add('visible', 'forfour');
         multiPlayer[2].classList.remove('fortwo', 'forthree');
-        multiPlayer[3].classList.add('visible');
+        multiPlayer[3].classList.add('visible', 'forfour');
         multiPlayer[2].classList.remove('fortwo', 'forthree');
     }
 }
@@ -598,10 +623,12 @@ function restartBTN() {
     for (let i = 0; i < 4; i++) {
         playerSeqBG[i].classList.remove('mobile_active');
         playerSeqNames[i].classList.remove('player_name_active');
+        playerSeqNames[i].classList.remove('player_name_active');
         playerSeqScores[i].classList.remove('points_active');
     }
     playerSeqBG[0].classList.add('mobile_active');
     playerSeqNames[0].classList.add('player_name_active');
+    playerSeqNames[1].classList.add('player_name_active');
     playerSeqScores[0].classList.add('points_active');
     clearCells();
     gameMode();
