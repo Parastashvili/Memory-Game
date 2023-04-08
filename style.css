@@ -8,6 +8,7 @@
     --iconhover: #6395B8;
     --numbers: #FCFCFC;
 }
+
 html {
     touch-action: manipulation;
     zoom: 0%;
@@ -650,7 +651,7 @@ body {
 
     #oneplayer {
         justify-content: center;
-        gap: 30px;
+        gap: 10px;
     }
 
     .oneplayer {
@@ -822,14 +823,32 @@ body {
     .players_boxes {
         margin: auto;
         width: 1110px;
-        overflow: hidden;
+        overflow: visible;
     }
 
     #game_zone {
         width: 1110px;
+        overflow: visible;
     }
 
-    .mobile_active::before {
+    .mobile_active::after {
         content: "CURRENT TURN";
+        position: absolute;
+        top: 90px;
+        right: 5%;
+        transform: translateX(0%);
+        font-size: 18px;
+        font-weight: 700;
+        animation: slide-out 1s ease-out forwards;
+    }
+
+    @keyframes slide-out {
+        0% {
+            color: transparent;
+        }
+
+        100% {
+            color: #152938;
+        }
     }
 }
