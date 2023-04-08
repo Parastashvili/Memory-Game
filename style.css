@@ -28,6 +28,7 @@ body {
     justify-content: center;
     align-items: center;
     background: var(--bg);
+    overflow-x: hidden;
 }
 
 #start_screen {
@@ -230,6 +231,11 @@ body {
     border-radius: 5px;
 }
 
+.players_name_desk {
+    display: none;
+    color: var(--numbers);
+}
+
 @keyframes slide-in {
     0% {
         left: -100%;
@@ -384,6 +390,10 @@ body {
 
 .forthree {
     width: 30%;
+}
+
+.forfour {
+    width: 22%;
 }
 
 #restart_screen {
@@ -690,4 +700,144 @@ body {
         gap: 16px;
     }
 
+    .imgsizefour {
+        width: 65px;
+        height: 65px;
+    }
+
+    .imgsizesix {
+        width: 55px;
+        height: 55px;
+    }
+
+    .mobile_players {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .players_name_desk {
+        display: block;
+    }
+
+    .mobile_names {
+        display: none;
+    }
+
+    .points {
+        font-size: 24px;
+        line-height: 30px;
+        margin-left: 16px;
+    }
+
+    .players_name {
+        font-size: 15px;
+        line-height: 19px;
+        margin-left: 16px;
+    }
+
+    .players_boxes {
+        margin: auto;
+        width: 532px;
+        overflow: hidden;
+    }
+
+    .biggrid {
+        width: 82px;
+        height: 82px;
+    }
+
+    #one_result_screen {
+        width: 532px;
+        height: 378px;
+        padding: 51px;
+    }
+
+    .wone {
+        font-size: 48px;
+        line-height: 60px;
+        margin-bottom: 16px;
+    }
+
+    .wtwo {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 30px;
+    }
+
+    .windiv {
+        width: 468px;
+        height: 48px;
+        gap: 16px;
+        border-radius: 10px;
+        padding-left: 32px;
+        padding-right: 32px;
+        margin-top: 8px;
+    }
+
+    #flexrow {
+        display: flex;
+        flex: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .yellowbtn_desk {
+        width: 250px;
+        height: 52px;
+        border-radius: 26px;
+        font-size: 20px;
+        line-height: 25px;
+        margin: 0px;
+        margin-top: 40px;
+    }
+
+    .restart_button_desk {
+        width: 250px;
+        height: 52px;
+        border-radius: 26px;
+        font-size: 20px;
+        line-height: 25px;
+        margin: 0px;
+        margin-top: 40px;
+    }
+
+    #multiplayer_result {
+        width: 532px;
+        padding: 51px;
+        border-radius: 20px;
+    }
+
+    .wthree {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .wfour {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+}
+
+@media (min-width:1440px) {
+    .players_boxes {
+        margin: auto;
+        width: 1110px;
+        overflow: hidden;
+    }
+    #game_zone {
+        width: 1110px;
+    }
+    .mobile_active::before {
+        content: "CURRENT TURN";
+        position: absolute;
+        top: 0;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: var(--orange);
+        animation: slide-in 1s ease-out forwards;
+        z-index: 0;
+        border-radius: 5px;
+    }
 }
