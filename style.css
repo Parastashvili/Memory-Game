@@ -837,8 +837,10 @@ body {
         top: 90px;
         right: 5%;
         transform: translateX(0%);
-        font-size: 18px;
         font-weight: 700;
+        font-size: 18px;
+        line-height: 16px;
+        letter-spacing: 3px;
         animation: slide-out 1s ease-out forwards;
     }
 
