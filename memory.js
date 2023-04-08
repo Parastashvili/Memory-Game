@@ -508,11 +508,11 @@ function checkPlayers() {
     } else if (players === '3') {
         onePlayer.style.display = 'none';
         multiPlayer[0].classList.add('visible', 'forthree');
-        multiPlayer[0].classList.remove('fortwo','forfour');
+        multiPlayer[0].classList.remove('fortwo');
         multiPlayer[1].classList.add('visible', 'forthree');
-        multiPlayer[0].classList.remove('fortwo','forfour');
+        multiPlayer[0].classList.remove('fortwo');
         multiPlayer[2].classList.add('visible', 'forthree');
-        multiPlayer[0].classList.remove('fortwo','forfour');
+        multiPlayer[0].classList.remove('fortwo');
     }
     else if (players === '4') {
         onePlayer.style.display = 'none';

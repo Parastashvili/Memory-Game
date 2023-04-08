@@ -8,7 +8,6 @@
     --iconhover: #6395B8;
     --numbers: #FCFCFC;
 }
-
 html {
     touch-action: manipulation;
     zoom: 0%;
@@ -825,19 +824,12 @@ body {
         width: 1110px;
         overflow: hidden;
     }
+
     #game_zone {
         width: 1110px;
     }
+
     .mobile_active::before {
         content: "CURRENT TURN";
-        position: absolute;
-        top: 0;
-        left: 0%;
-        width: 100%;
-        height: 100%;
-        background-color: var(--orange);
-        animation: slide-in 1s ease-out forwards;
-        z-index: 0;
-        border-radius: 5px;
     }
 }
