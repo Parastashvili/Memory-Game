@@ -284,7 +284,9 @@ function checkCells() {
                         blocker.style.display = "none";
                     }.bind(this), 1400);
                     setTimeout(function end() {
-                        if (players == '1' && onlyplayer == 8) {
+                        if (players == '1' && onlyplayer == 8 && gridsize =='4') {
+                            resultScreen();
+                        }else if(players == '1' && onlyplayer == 18 && gridsize =='6'){
                             resultScreen();
                         }
                     }, 1000);
